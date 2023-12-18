@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pie Chart</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.1.2/echarts.min.js"></script>
+</head>
+<body>
+    <div id="pie_chart" style="width: 600px; height: 400px;"></div>
+    <script>
+        var myChart = echarts.init(document.getElementById('pie_chart'));
+        myChart.setOption({
+            {%  block content  %}
+            {%  endblock  %}
+        });
+    </script>
+</body>
+</html>

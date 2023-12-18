@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Word </title>
+</head>
+<body>
+    <h1>Word </h1>
+    <form method="POST">
+        <input type="text" name="url" placeholder="请输入要爬取的网址">
+        <input type="submit" value="生成图">
+    </form>
+
+    {% if show_chart %}
+    <iframe src="{{ url_for('static', filename='bing.html') }}"width="1000" height="600"></iframe>
+{% endif %}
+    {% if show_chart %}
+    <iframe src="{{ url_for('static', filename='zhu.html') }}"width="1000" height="600"></iframe>
+{% endif %}
+    {% if show_chart %}
+    <iframe src="{{ url_for('static', filename='zhexian.html') }}"width="1000" height="600"></iframe>
+{% endif %}
+</body>
+<ml>
